@@ -1,0 +1,132 @@
+- id: 1
+  details:
+    title: Dashboard
+    description: >
+      L'extrait standard de Lorem Ipsum utilisé depuis le XVIè siècle est reproduit ci-dessous pour les curieux.
+      Les sections 1.10.32 et 1.10.33 du "De Finibus Bonorum et Malorum" de Cicéron sont aussi reproduites dans leur
+      version originale, accompagnée de la traduction anglaise de H. Rackham (1914).
+    client: client 1
+    date: 01/01/01
+    technologies:
+      - java
+      - php
+      - sql
+    images:
+      - stock/08-long.jpg
+      - stock/08-long.jpg
+      - stock/08-long.jpg
+
+
+- id: 2
+  details:
+    title: World Clock Widget
+    description: >
+      L'extrait standard de Lorem Ipsum utilisé depuis le XVIè siècle est reproduit ci-dessous pour les curieux.
+      Les sections 1.10.32 et 1.10.33 du "De Finibus Bonorum et Malorum" de Cicéron sont aussi reproduites dans leur
+      version originale, accompagnée de la traduction anglaise de H. Rackham (1914).
+    client: client 2
+    date: 02/02/02
+    technologies:
+      - ruby
+      - sql
+      - js
+    images:
+      - stock/07.jpg
+      - stock/07.jpg
+      - stock/07.jpg
+
+
+- id: 3
+  details:
+    title: To-Do Dashboard
+    description: >
+      L'extrait standard de Lorem Ipsum utilisé depuis le XVIè siècle est reproduit ci-dessous pour les curieux.
+      Les sections 1.10.32 et 1.10.33 du "De Finibus Bonorum et Malorum" de Cicéron sont aussi reproduites dans leur
+      version originale, accompagnée de la traduction anglaise de H. Rackham (1914).
+    client: client 3
+    date: 03/03/03
+    technologies:
+      - js
+      - css
+      - html
+    images:
+      - stock/08-long.jpg
+      - stock/08-long.jpg
+      - stock/08-long.jpg
+
+
+- id: 4
+  details:
+    title: WhereTO App
+    description: >
+      L'extrait standard de Lorem Ipsum utilisé depuis le XVIè siècle est reproduit ci-dessous pour les curieux.
+      Les sections 1.10.32 et 1.10.33 du "De Finibus Bonorum et Malorum" de Cicéron sont aussi reproduites dans leur
+      version originale, accompagnée de la traduction anglaise de H. Rackham (1914).
+    client: client 4
+    date: 04/04/04
+    technologies:
+      - python
+      - sql
+      - java
+    images:
+      - stock/014.jpg
+      - stock/014.jpg
+      - stock/014.jpg
+
+
+
+- id: 5
+  details:
+    title: Events and More
+    description: >
+      L'extrait standard de Lorem Ipsum utilisé depuis le XVIè siècle est reproduit ci-dessous pour les curieux.
+      Les sections 1.10.32 et 1.10.33 du "De Finibus Bonorum et Malorum" de Cicéron sont aussi reproduites dans leur
+      version originale, accompagnée de la traduction anglaise de H. Rackham (1914).
+    client: client 5
+    date: 05/05/05
+    technologies:
+      - wp
+      - php
+      - vue js
+    images:
+      - stock/34.jpg
+      - stock/34.jpg
+      - stock/34.jpg
+
+
+- id: 6
+  details:
+    title: Ski * Buddy
+    description: >
+      L'extrait standard de Lorem Ipsum utilisé depuis le XVIè siècle est reproduit ci-dessous pour les curieux.
+      Les sections 1.10.32 et 1.10.33 du "De Finibus Bonorum et Malorum" de Cicéron sont aussi reproduites dans leur
+      version originale, accompagnée de la traduction anglaise de H. Rackham (1914).
+    client: client 6
+    date: 06/06/06
+    technologies:
+      - cakephp
+      - nodejs
+      - css
+    images:
+      - stock/53.jpg
+      - stock/53.jpg
+      - stock/53.jpg
+
+
+- id: 7
+  details:
+    title: Seemple* Music for iPad
+    description: >
+      L'extrait standard de Lorem Ipsum utilisé depuis le XVIè siècle est reproduit ci-dessous pour les curieux.
+      Les sections 1.10.32 et 1.10.33 du "De Finibus Bonorum et Malorum" de Cicéron sont aussi reproduites dans leur
+      version originale, accompagnée de la traduction anglaise de H. Rackham (1914).
+    client: client 7
+    date: 07/07/07
+    technologies:
+      - rails
+      - rails
+      - mongo
+    images:
+      - stock/39.jpg
+      - stock/39.jpg
+      - stock/39.jpg

@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+@import "socicon/socicon";
+@import "bootstrap-social/bootstrap-social";
+@import "font-awesome/css/font-awesome.min";
+@import "simple-line-icons/simple-line-icons.min";
+@import "animate/animate.min";
+@import "bootstrap/css/bootstrap.min";
+/* END GLOBAL MANDATORY STYLES */
+/* BEGIN: BASE PLUGINS */
+@import "revo-slider/css/settings";
+@import "revo-slider/css/layers";
+@import "revo-slider/css/navigation";
+@import "cubeportfolio/css/cubeportfolio.min";
+@import "owl-carousel/owl.carousel";
+@import "fancybox/jquery.fancybox";
+@import "slider-for-bootstrap/slider";
+/* END: BASE PLUGINS*/
+/* BEGIN THEME STYLES*/
+@import "plugins";
+@import "components";
+@import "themes/default";
+@import "custom";
