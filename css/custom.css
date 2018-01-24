@@ -1,0 +1,328 @@
+
+.c-logo .c-desktop-logo {
+    width: 100px;
+}
+
+.c-logo .c-desktop-logo-inserse{
+    width: 70px;
+    display: none;
+}
+
+.c-logo .c-mobile-logo{
+    width: 80px;
+}
+
+.c-footer .c-desktop-logo{
+    width: 89px;
+}
+
+.imagecontour {
+    padding: 10px;
+    border: solid 1px #EFEFEF;
+    background-color: #FFFFFF;
+}
+
+.effect2 {
+    position: relative;
+}
+
+.effect2:before, .effect2:after {
+    z-index: -1;
+    position: absolute;
+    content: "";
+    bottom: 15px;
+    left: 10px;
+    width: 50%;
+    top: 80%;
+    max-width: 300px;
+    background: #777;
+    box-shadow: 0 15px 10px #777;
+    transform: rotate(-3deg);
+}
+
+.effect2:after {
+    transform: rotate(3deg);
+    right: 10px;
+    left: auto;
+}
+
+.c-layout-footer.c-layout-footer-4.c-bg-footer-8 {
+    background: url("/images/bg-97.jpg") center center no-repeat;
+}
+
+.solution_block {
+    background: url("/images/bg_oswald_1.jpg");
+
+}
+
+.tp-banner-container.c-arrow-dark .tparrows.circle {
+    background-image: url("/images/line-icons/dark1.png");
+}
+
+.tp-banner-container.c-arrow-darken .tparrows.circle {
+    background-image: url("/images/line-icons/dark3.png");
+}
+
+.cbp:before {
+    background: url("/images/cubeportfolio/cbp-loading.gif") no-repeat scroll center center transparent;
+}
+
+.c-content-feature-2.c-option-2:hover .c-icon-wrapper > .c-content-line-icon {
+    background-image: url("/images/line-icons/white.png");
+}
+
+.c-content-line-icon.c-theme {
+    background-image: url("/images/line-icons/default.png");
+}
+
+.c-theme-bg {
+    background: #3163af !important;
+}
+
+.c-theme-border {
+    border-color: #3163af !important;
+}
+
+.c-theme-font, .c-theme-color {
+    color: #3163af !important;
+}
+
+.c-layout-footer.c-layout-footer-4 .c-footer .c-feedback form .form-control {
+    border-color: #ffffff;
+    color: #ffffff;
+}
+
+.c-layout-footer.c-layout-footer-4 .c-footer .c-feedback form .form-control::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #ffffff;
+}
+
+.c-layout-footer.c-layout-footer-4 .c-footer .c-feedback form .form-control::-moz-placeholder { /* Firefox 19+ */
+    color: #ffffff;
+}
+
+.c-layout-footer.c-layout-footer-4 .c-footer .c-feedback form .form-control:-ms-input-placeholder { /* IE 10+ */
+    color: #ffffff;
+}
+
+.c-layout-footer.c-layout-footer-4 .c-footer .c-feedback form .form-control:-moz-placeholder { /* Firefox 18- */
+    color: #ffffff;
+}
+
+.c-theme-nav li.c-active > a:not(.btn) {
+    color: #3163af !important;
+}
+
+.c-content-title-1 > .c-line-right, .c-content-title-1 > .c-line-left {
+    background-color: #3163af;
+}
+
+.c-content-list-1.c-theme.c-separator-dot > li:before, .c-content-list-1.c-theme > li:before {
+    background: #3163af;
+}
+
+.c-theme-bg-parent-hover:hover .c-theme-bg-on-parent-hover {
+    background: #3163af !important;
+}
+
+.c-theme-nav li:focus > a:not(.btn), .c-theme-nav li:active > a:not(.btn), .c-theme-nav li:hover > a:not(.btn) {
+    color: #3163af !important;
+}
+
+#images-box {
+    /* The total width of the image-box, mainly for centering */
+    width: 850px;
+    margin: 0px auto;
+    position: relative;
+    top: 70px;
+}
+
+.image-lightbox img {
+    /* Inherit the width and height from the parent element */
+    width: inherit;
+    height: inherit;
+    z-index: 3000;
+}
+
+.holder {
+    /* The width and height, you can change these */
+    width: 250px;
+    height: 166px;
+    /* Float left, so everything aligns right */
+    float: left;
+    margin: 0 20px 0 0;
+}
+
+.image-lightbox {
+    /* Inherit width and height from the .holder */
+    width: inherit;
+    height: inherit;
+    padding: 10px;
+    /* Box shadow */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    border-radius: 5px;
+    /* Position absolutely so we can zoom it out later */
+    position: absolute;
+    top: 0;
+    font-family: Arial, sans-serif;
+    /* Transitions to provide some eye candy */
+    -webkit-transition: all ease-in 0.5s;
+    -moz-transition: all ease-in 0.5s;
+    -ms-transition: all ease-in 0.5s;
+    -o-transition: all ease-in 0.5s;
+}
+
+.image-lightbox span {
+    display: none;
+}
+
+.image-lightbox .expand {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 4000;
+    background: rgba(0, 0, 0, 0); /* Fixes an IE bug */
+    left: 0;
+}
+
+.image-lightbox .close {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 20px;
+    top: 20px;
+}
+
+.image-lightbox .close a {
+    height: auto;
+    width: auto;
+    padding: 5px 10px;
+    color: #fff;
+    text-decoration: none;
+    background: #22272c;
+    box-shadow: inset 0px 24px 20px -15px rgba(255, 255, 255, 0.1), inset 0px 0px 10px rgba(0, 0, 0, 0.4), 0px 0px 30px rgba(255, 255, 255, 0.4);
+    border-radius: 5px;
+    font-weight: bold;
+    float: right;
+}
+
+.image-lightbox .close a:hover {
+    box-shadow: inset 0px -24px 20px -15px rgba(255, 255, 255, 0.01), inset 0px 0px 10px rgba(0, 0, 0, 0.4), 0px 0px 20px rgba(255, 255, 255, 0.4);
+}
+
+div[id^=image]:target {
+    width: 450px;
+    height: 300px;
+    z-index: 5000;
+    top: 50px;
+    left: 200px;
+}
+
+div[id^=image]:target .close {
+    display: block;
+}
+
+div[id^=image]:target .expand {
+    display: none;
+}
+
+div#image-1:target, div#image-2:target, div#image-3:target {
+    left: 200px;
+}
+
+div#image-1 {
+    left: 0;
+}
+
+div#image-2 {
+    left: 290px;
+}
+
+div#image-3 {
+    left: 580px;
+}
+
+/* ------- IGNORE */
+
+#header {
+    width: 100%;
+    margin: 0px auto;
+}
+
+#header #center {
+    width: 350px;
+    margin: 0px auto;
+}
+
+#header a {
+    font-family: 'BebasRegular', sans-serif;
+    text-decoration: none;
+    color: #000;
+    font-size: 50px;
+}
+
+#header .head {
+}
+
+#header .sub-head {
+    color: #909090;
+    display: block;
+    font-size: 18px;
+    position: absolute;
+    left: 20px;
+    top: 25px;
+    vertical-align: middle;
+}
+
+.c-layout-footer.c-layout-footer-4 .c-footer .c-links .c-nav > li > a {
+    padding: 10px 6px;
+}
+
+.c-layout-footer.c-layout-footer-4 .c-footer .c-about,
+.c-layout-footer.c-layout-footer-4 .c-footer .c-contact,
+.c-layout-footer.c-layout-footer-4 .c-footer .c-socials > li > a > i{
+    color: #e8e8e8;
+}
+
+
+.c-theme-bg-parent-hover:hover .c-theme-bg-on-parent-hover {
+    background: #789ed5 !important
+}
+
+.c-content-feature-2.c-option-2:hover .c-icon-wrapper > .c-content-line-icon {
+    background-image: url(/images/line-icons/default.png);
+}
+
+@media (min-width: 992px) {
+    .c-layout-header .c-brand {
+        margin: 20px 0 0 0;
+    }
+
+    .c-page-on-scroll.c-layout-header-fixed .c-layout-header .c-brand {
+        margin: 9px 0 19px 0;
+    }
+
+    .c-page-on-scroll .c-logo .c-desktop-logo-inserse{
+        display: block;
+
+    }
+}
+
+@media (max-width: 991px){
+    .c-layout-header .c-brand {
+        margin: 8px 15px 20px 15px;
+    }
+
+    .c-layout-header.c-layout-header-default-mobile .c-brand > .c-hor-nav-toggler{
+        top: 14px;
+    }
+
+    .c-layout-header-fullscreen.c-layout-header-mobile-fixed.c-layout-header-static .c-layout-header.c-mega-menu-shown .c-mega-menu,
+    .c-layout-header-fixed.c-layout-header-mobile-fixed .c-layout-header.c-mega-menu-shown .c-mega-menu{
+        top: 64px;
+    }
+    .c-footer .c-content-title-1{
+        padding: 0 25%;
+    }
+}
