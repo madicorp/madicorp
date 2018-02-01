@@ -22,7 +22,7 @@
       "mountPoints": [
         {
           "sourceVolume": "madicorp_db",
-          "containerPath": "/data",
+          "containerPath": "/data"
         }
       ]
     },
