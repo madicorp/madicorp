@@ -17,6 +17,7 @@
   "containerDefinitions": [
     {
       "name": "madicorp_db",
+      "image": "rethinkdb",
       "memory": 128,
       "essential": true,
       "mountPoints": [
@@ -28,22 +29,7 @@
     },
     {
       "name": "madicorp_web",
-      "memory": 128,
-      "essential": true,
-      "links": [
-        "madicorp_db"
-      ],
-      "mountPoints": [
-        {
-          "sourceVolume": "madicorp_web",
-          "containerPath": "/var/www/html",
-          "readOnly": true
-        }
-      ]
-    },
-    {
-      "name": "nginx-proxy",
-      "image": "nginx",
+      "image": "madicorp/website",
       "memory": 128,
       "essential": true,
       "portMappings": [
@@ -53,18 +39,12 @@
         }
       ],
       "links": [
-        "madicorp_web",
         "madicorp_db"
       ],
       "mountPoints": [
         {
-          "sourceVolume": "madicorp_db",
+          "sourceVolume": "madicorp_web",
           "containerPath": "/var/www/html",
-          "readOnly": true
-        },
-        {
-          "sourceVolume": "nginx-proxy-conf",
-          "containerPath": "/etc/nginx/conf.d",
           "readOnly": true
         },
         {
