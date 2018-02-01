@@ -16,12 +16,27 @@
   ],
   "containerDefinitions": [
     {
-      "name": "madicorp_db",
-      "image": "php:fpm",
+      "name": "madicorp_web",
+      "memory": 128,
       "essential": true,
       "mountPoints": [
         {
           "sourceVolume": "madicorp_db",
+          "containerPath": "/data",
+          "readOnly": true
+        }
+      ]
+    },
+    {
+      "name": "madicorp_db",
+      "memory": 128,
+      "essential": true,
+      "links": [
+        "madicorp_db"
+      ],
+      "mountPoints": [
+        {
+          "sourceVolume": "madicorp_web",
           "containerPath": "/var/www/html",
           "readOnly": true
         }
@@ -30,6 +45,7 @@
     {
       "name": "nginx-proxy",
       "image": "nginx",
+      "memory": 128,
       "essential": true,
       "portMappings": [
         {
@@ -38,6 +54,7 @@
         }
       ],
       "links": [
+        "madicorp_web",
         "madicorp_db"
       ],
       "mountPoints": [
