@@ -60,3 +60,21 @@ validate/log.json
 
 ### NPM ###
 package-lock.json
+
+### Docker ###
+
+nginx/.htpasswd
+
+
+### IDEA ###
+.idea
+
+
+### Virtual env ###
+venv
+
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml

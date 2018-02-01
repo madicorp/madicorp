@@ -42,59 +42,28 @@ gulp.task('minify-images', () => {
 });
 
 
+// Copy vuejs scripts
+gulp.task('scripts-vue', () => {
+    gulp.src([
+        // Note: You need to explicitly list your scripts here in the right order
+        //       to be correctly concatenated
+        './_scripts/vuejs/*.js',
+    ])
+        .pipe($.babel())
+        .pipe($.uglify())
+        .pipe(gulp.dest('scripts/vuejs'));
+});
+
+
 gulp.task('theme-scripts', () => {
     gulp.src([
-        // BEGIN: CORE PLUGINS
-        "./_scripts/jquery.min.js",
-        "./_scripts/jquery-migrate.min.js",
-        "./_scripts/bootstrap.min.js",
-        "./_scripts/jquery.easing.min.js",
-        "./_scripts/wow.js",
-        "./_scripts/reveal-animate.js",
-        // END: CORE PLUGINS
-
-        // BEGIN: LAYOUT PLUGINS
-        "./_scripts/jquery.themepunch.tools.min.js",
-        "./_scripts/jquery.themepunch.revolution.min.js",
-        "./_scripts/extensions/revolution.extension.slideanims.min.js",
-        "./_scripts/extensions/revolution.extension.layeranimation.min.js",
-        "./_scripts/extensions/revolution.extension.navigation.min.js",
-        "./_scripts/extensions/revolution.extension.video.min.js",
-        "./_scripts/jquery.cubeportfolio.min.js",
-        "./_scripts/owl.carousel.min.js",
-        "./_scripts/jquery.waypoints.min.js",
-        "./_scripts/jquery.counterup.min.js",
-        "./_scripts/jquery.fancybox.pack.js",
-        "./_scripts/jquery.smooth-scroll.js",
-        "./_scripts/bootstrap-slider.js",
-
-        // BEGIN: THEME SCRIPTS
-        "./_scripts/components.js",
-        "./_scripts/components-shop.js",
-        "./_scripts/app.js",
-        "./_scripts/custom.js",
-        // END: THEME SCRIPTS
-
-        // BEGIN: PAGE SCRIPTS
-        "./_scripts/slider-5.js",
-        // END: PAGE SCRIPTS
-
-
-        // BEGIN: PROJECTS SCRIPTS
-        "./_scripts/projects.js",
-        // END: PROJECTS SCRIPTS
-
-        // BEGIN: vuejs SCRIPTS
-        "./_scripts/vue.min.js",
-        // END: vuejs SCRIPTS
-
-
+        './_scripts/vendors/**/*.js',
     ])
         .pipe(gulp.dest('scripts'));
 });
 
 // Concatenate, transpiles ES2015 code to ES5 and minify JavaScript.
-gulp.task('scripts', ['theme-scripts'], () => {
+gulp.task('scripts', ['scripts-vue','theme-scripts'], () => {
     gulp.src([
         // Note: You need to explicitly list your scripts here in the right order
         //       to be correctly concatenated

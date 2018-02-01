@@ -1,0 +1,19 @@
+version: '3'
+services:
+  web:
+    container_name: madicorp_web
+    build:
+      context: .
+      dockerfile: docker/nginx/Dockerfile
+    ports:
+      - "80:80"
+    depends_on:
+      - db
+    links:
+      - db
+
+  db:
+    container_name: madicorp_db
+    image: rethinkdb
+    volumes:
+      - /var/www/db/madicorp/data:/data
