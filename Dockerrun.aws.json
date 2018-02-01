@@ -46,10 +46,6 @@
           "sourceVolume": "madicorp_web",
           "containerPath": "/var/www/html",
           "readOnly": true
-        },
-        {
-          "sourceVolume": "awseb-logs-nginx-proxy",
-          "containerPath": "/var/log/nginx"
         }
       ]
     }
