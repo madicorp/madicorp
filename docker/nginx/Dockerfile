@@ -1,4 +1,5 @@
 FROM nginx:alpine
+ADD docker/nginx/certs /etc/nginx/certs/
 ADD docker/nginx/conf/sites.conf /etc/nginx/conf.d/default.conf
 ADD docker/nginx/.htpasswd /etc/nginx/.htpasswd
 ADD ./_site/ /var/www/html/
