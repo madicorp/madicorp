@@ -73,8 +73,3 @@ nginx/.htpasswd
 ### Virtual env ###
 venv
 
-
-# Elastic Beanstalk Files
-.elasticbeanstalk/*
-!.elasticbeanstalk/*.cfg.yml
-!.elasticbeanstalk/*.global.yml
