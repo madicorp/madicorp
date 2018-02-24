@@ -16,18 +16,19 @@
   ],
   "containerDefinitions": [
     {
-      "name": "madicorp_db",
+      "name": "madicorp_web",
       "memory": 128,
       "essential": true,
       "mountPoints": [
         {
           "sourceVolume": "madicorp_db",
           "containerPath": "/data",
+          "readOnly": true
         }
       ]
     },
     {
-      "name": "madicorp_web",
+      "name": "madicorp_db",
       "memory": 128,
       "essential": true,
       "links": [
